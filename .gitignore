@@ -2,3 +2,6 @@
 *.obj
 *.tds
 
+*.pdf
+tp*
+!*.c
