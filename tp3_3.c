@@ -32,6 +32,8 @@ int main(){
     {
         printf("-");
         puts(nombres[j]);
+        free(nombres[j]);
     }
+    free(nombres);
     return 0;
 }

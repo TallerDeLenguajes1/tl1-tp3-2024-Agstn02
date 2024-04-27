@@ -45,7 +45,12 @@ int main()
     
 
     mostrarClientes(cantClientes, clientes);
-
+    //Libero la memoria
+    for (int i = 0; i < cantClientes; i++)
+    {
+        free(clientes[i]);
+    }
+    free(clientes);
     return 0;
 }
 
